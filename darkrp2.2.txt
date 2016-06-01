@@ -1,0 +1,15 @@
+"darkrp2.2"
+{
+    "base"   "sandbox"
+    "title"  "DarkRP 2.2"
+    "version"   "2.2.19.13"
+    "menusystem" "1"
+
+    "author_name"   "By Rickster, Updated: Pcwizdan, Sibre, philxyz, [GNC] Matt, FPtje Falco"
+    "author_email"  ""
+    "author_url"    ""
+
+    "icon"  ""
+    "info"  ""
+    "hide"  "0"
+}
