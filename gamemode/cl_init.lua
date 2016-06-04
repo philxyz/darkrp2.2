@@ -73,6 +73,15 @@ surface.CreateFont("AckBarWriting",
 	antialias = true
 })
 
+surface.CreateFont("ScoreboardText",
+{
+	font = "Tahoma",
+	size = 16,
+	weight = 1000,
+	antialias = true,
+	outline = true
+})
+
 function GetTextHeight(font, str)
 	surface.SetFont(font)
 	local w, h = surface.GetTextSize(str)
