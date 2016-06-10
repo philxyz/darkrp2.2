@@ -1,6 +1,6 @@
-includeCS("HungerMod/cl_init.lua")
+AddCSLuaFile("hungermod/cl_init.lua")
 
-include("HungerMod/player.lua")
+include("hungermod/player.lua")
 
 HM = { }
 FoodItems = { }

@@ -7,7 +7,12 @@ HM.Color2 = Color(30, 30, 120, 255)
 HM.Color3 = Color(255, 255, 255, 255)
 HM.Color4 = Color(200, 0, 0, 255)
 
-surface.CreateFont("ChatFont", 22, 500, true, false, "HungerPlus")
+surface.CreateFont("HungerPlus", {
+	font = "ChatFont",
+	size = 22,
+	weight = 500,
+	antialias = true
+})
 
 function HM.HUDPaint()
 	if GetGlobalInt("hungermod") == 0 then return end
