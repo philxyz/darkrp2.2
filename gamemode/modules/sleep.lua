@@ -8,7 +8,7 @@ hook.Add("PlayerSpawn", "Knockout", ResetKnockouts)
 
 function KnockoutToggle(player, command, args, caller)
 	if player:Alive() then
-		print(tostring(player:GetNWBool("Knockedout")))
+		--print(tostring(player:GetNWBool("Knockedout")))
 		if player:GetNWFloat("KnockoutTimer") + KnockoutTime < CurTime() then
 			if player:GetNWEntity("Ragdoll") ~= NULL then
 				local ragdoll = player:GetNWEntity("Ragdoll")
