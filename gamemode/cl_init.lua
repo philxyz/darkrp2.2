@@ -53,7 +53,9 @@ function LoadModules(msg)
 	local num = msg:ReadShort()
 
 	for n = 1, num do
-		include("darkrp2.2/gamemode/modules/" .. msg:ReadString())
+		local str = msg:ReadString()
+		print("including " .. str)
+		include("darkrp2.2/gamemode/modules/" .. str)
 	end
 end
 usermessage.Hook("LoadModules", LoadModules)

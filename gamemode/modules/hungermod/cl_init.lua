@@ -20,13 +20,13 @@ function HM.HUDPaint()
 	local x = 7
 	local y = ScrH() - 9
 
-	draw.RoundedBox(4, x - 1, y - 1, 195, 9, self.Color1)
+	draw.RoundedBox(4, x - 1, y - 1, 195, 9, HM.Color1)
 
 	if LocalPlayer():GetNWInt("Energy") > 0 then
-		draw.RoundedBox(4, x, y, 193 * (math.Clamp(LocalPlayer():GetNWInt("Energy"), 0, 100) / 100), 7, self.Color2)
-		draw.DrawText(math.ceil(LocalPlayer():GetNWInt("Energy")) .. "%", "Default", x + 100, y - 2, self.Color3, 1)
+		draw.RoundedBox(4, x, y, 193 * (math.Clamp(LocalPlayer():GetNWInt("Energy"), 0, 100) / 100), 7, HM.Color2)
+		draw.DrawText(math.ceil(LocalPlayer():GetNWInt("Energy")) .. "%", "Default", x + 100, y - 2, HM.Color3, 1)
 	else
-		draw.DrawText("Starving!", "ChatFont", x + 96, y - 4, self.Color4, 1)
+		draw.DrawText("Starving!", "ChatFont", x + 96, y - 4, HM.Color4, 1)
 	end
 
 	if FoodAteAlpha > -1 then

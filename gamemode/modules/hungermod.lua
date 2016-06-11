@@ -1,4 +1,4 @@
-AddCSLuaFile("hungermod/cl_init.lua")
+includeCS("hungermod/cl_init.lua")
 
 include("hungermod/player.lua")
 
