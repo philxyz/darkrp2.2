@@ -160,7 +160,7 @@ function includeCS(dir)
 	table.insert(CSFiles, dir)
 end
 
-local files = file.Find("DarkRP/gamemode/modules/*.lua", "LUA")
+local files = file.Find("darkrp2.2/gamemode/modules/*.lua", "LUA")
 for k, v in pairs(files) do
 	include("modules/" .. v)
 end
