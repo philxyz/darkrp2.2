@@ -1,0 +1,7 @@
+To install, place the folder "darkrp2.2" into
+
+garrysmod/gamemodes
+
+on your server.
+
+Do not rename the folder. If you do, some things will not work.
