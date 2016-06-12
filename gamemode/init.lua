@@ -421,6 +421,8 @@ function GM:Think()
 	end
 end
 
+hook.Add("CanDrive", "DRPCanDrive", function() return false end)
+
 AddHelpLabel(-1, HELP_CATEGORY_CONCMD, "gm_showhelp - Toggle help menu (bind this to F1 if you haven't already)")
 AddHelpLabel(-1, HELP_CATEGORY_CONCMD, "serverHelp - Show's server help.")
 AddHelpLabel(-1, HELP_CATEGORY_CONCMD, "gm_showspare1 - Toggle vote clicker (bind this to F3 if you haven't already)")
